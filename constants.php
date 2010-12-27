@@ -41,6 +41,6 @@ define('IXG_KV_URL_CACHE', true); # Helps improve speed by caching frequently us
 
 define('IXG_MEMCACHED', 'localhost'); # Hostname for the Memcached server
 define('IXG_MEMCACHED_PORT', 11211); # The port for the Memcached server
-define('IXG_MEMCACHED_TYPE', 'MEMCACHED'); # (MEMCACHED|MEMCACHE) - Which PECL extension should be accessed
+define('IXG_MEMCACHED_TYPE', class_exists("Memcached")?"MEMCACHED":"MEMCACHE"); # (MEMCACHED|MEMCACHE) - Which PECL extension should be accessed
 
 define('IXG_RAW', '../keyval.json'); # File path for raw key-value storage.
