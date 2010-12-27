@@ -1,0 +1,11 @@
+Interchange (Singularity)
+Version 0.1
+-------------------------
+
+Interchange is a simple application platform that enables multiple applications to live in harmony. It works by routing URLs at the platform level, rather than the application level. In addition, HTTP logic is abstracted to simple function calls, eliminating the need to handle URL routing at its most basic level. This allows the developer to create applications much more rapidly and with greater confidence in complex code.
+
+This version (Singularity) is a version to be used by application developers that wish to distribute or sell their applications. The base version of Interchange is slimmed down, with many features stripped out (URL route caching, non-methodical endpoints, index.json parsing, etc.).
+
+Additionally, this verison of Interchange is built to be 100% compatible with standard methodical Interchange endpoints, meaning that an application built inside Singularity can be copied and pasted into a folder in the /endpoints/ directory of an Interchange installation and work just as well (not taking into account libraries and such).
+
+
