@@ -60,10 +60,10 @@ foreach($path as $p) {
 }
 $path = $new_path;
 unset($new_path);
-if($path_len = count($path)) {
+
+if($path_len = count($path))
 	$final_path = urldecode($path[$path_len - 1]);
-	unset($path_len);
-} else
+else
 	$final_path = '';
 if(strpos($final_path, '.') !== false) {
 	$expl = explode('.', $final_path);
